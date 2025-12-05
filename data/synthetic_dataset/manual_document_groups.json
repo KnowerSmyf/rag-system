@@ -1,0 +1,22 @@
+[
+    ["Information Management Policy", "Data Breach Procedure"],
+    ["Cyber Security Exceptions Procedure", "Cyber Security Policy"],
+    ["Cyber Security Incident Response Procedure", "Cyber Security Policy"],
+    ["Information Management Policy", "Cyber Security Exceptions Procedure", "Data Breach Procedure"],
+    ["Cyber Security Exceptions Procedure", "Cyber Security Policy", "Data Breach Procedure"],
+    ["Flammable and Combustible Liquids: Storage and Handling Procedure", "Chemical Manifest Procedure"],
+    ["Chemical Storage Safety Guideline", "Storage of Chemicals in Fridges, Freezers and Cold Rooms Guideline", "Chemical Manifest Procedure"],
+    ["Chemical Storage Safety Guideline", "Flammable and Combustible Liquids: Storage and Handling Procedure"],
+    ["Chemical Storage Safety Guideline", "Chemical Manifest Procedure"],
+    ["Chemical Spill and Response Procedure", "Chemical Spill and Response Guideline"],
+    ["Chemical Spill and Response Procedure", "Working Safely with Arsenic Guideline"],
+    ["Chemical Spill and Response Guideline", "Working Safely with Arsenic Guideline"],
+    ["Emergency Response Plan for Radioactive Liquid Spills Procedure", "Chemical Spill and Response Procedure", "Chemical Spill and Response Guideline"],
+    ["Emergency Response Plan for Radioactive Liquid Spills Procedure", "Chemical Spill and Response Procedure", "Working Safely with Arsenic Guideline"],
+    ["Data Breach Policy", "Privacy Policy"],
+    ["Privacy Policy", "Access to and Amendment of UQ Documents Procedure"],
+    ["Staff Code of Conduct Policy", "Conflict of Interest Policy"],
+    ["Staff Code of Conduct Policy", "Reportable Gifts and Benefits Procedure"],
+    ["Conflict of Interest Policy", "Reportable Gifts and Benefits Procedure"],
+    ["Cyber Security Exceptions Procedure", "Cyber Security Incident Response Procedure"]
+]

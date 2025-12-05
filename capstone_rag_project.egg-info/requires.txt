@@ -1,0 +1,10 @@
+chromadb
+dspy
+langchain
+matplotlib
+pandas
+python-dotenv
+seaborn
+sentence-transformers
+spacy
+torch

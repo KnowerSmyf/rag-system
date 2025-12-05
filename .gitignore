@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+.env/
+.env
+
+# Data / caches / binary stores
+data/stores/*
+!data/stores/chroma_agentic_db/
+data/synthetic_dataset/reading.ipynb
+results/old_corpus/*
+results/old_synth/*
+jonk/
+my_project_backup.tar.xz
+
+# IDEs / OS files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+system_name,retrieval_f1,semantic_f1
+VanillaRAG_TextSplit,1.0,0.7272727272727273
+AgenticRAG_Compiled_TextSplit,1.0,0.6976744186046512
+AgenticRAG_Compiled_Agentic,1.0,0.6976744186046512
+AgenticRAG_Uncompiled_Agentic,1.0,0.6976744186046512
+AgenticRAG_Uncompiled_TextSplit,1.0,0.6976744186046512
+VanillaRAG_Agentic,0.6666666666666666,0.6956521739130436
+LLM_Only_Baseline,0.0,0.5753424657534245

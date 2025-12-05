@@ -1,0 +1,41 @@
+├── .env
+├── .gitignore
+├── README.md
+├── data
+│   ├── agentic_chunks_cache.json
+│   ├── bm25_retriever.pkl
+│   ├── scraped_corpus
+│   │   ├── policy_1.txt
+│   │   ├── ...
+│   │   └── policy_421.txt
+│   ├── stores
+│   │   ├── chroma_agentic_db
+│   │   ├── chroma_metadata_db
+│   │   └── chroma_text_split_db
+│   └── synthetic_dataset
+│       ├── test.jsonl
+│       └── train.jsonl
+├── notebooks
+│   ├── agentic.ipynb
+│   └── eval.ipynb
+├── requirements.txt
+├── results
+│   ├── final_evaluation_detailed_results.csv
+│   ├── final_evaluation_summary.csv
+│   └── optimized_programs
+│       ├── compiled_retriever_bootstrap_v1.json
+│       └── compiled_retriever_bootstrap_v2.json
+├── src
+│   ├── __pycache__
+│   │   ├── generate_ppl_dataset.cpython-310.pyc
+│   │   └── rag_system.cpython-310.pyc
+│   └── rag_system
+│       └── rag_system.py
+├── tasks
+│   ├── data_preparation
+│   │   ├── build_agentic_db.py
+│   │   ├── build_metadata_db.py
+│   │   ├── build_text_split_db.py
+│   │   └── generate_qa_dataset.py
+│   └── scraping
+└── venv/

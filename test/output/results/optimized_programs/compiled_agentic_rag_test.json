@@ -1,0 +1,71 @@
+{
+  "react": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Conduct research to find all policy document titles relevant to answering the user's question. Use your tools strategically. Start with precise keyword searches for specific terms, then broaden your search with semantic queries if needed. Make sure you are meticulous in your research. If one approach doesn't yeild useful results, try something else. Your final output is a list of the most relevant document titles that will help answer the user's question.\n\nYou are an Agent. In each episode, you will be given the fields `question` as input. And you can see your past trajectory so far.\nYour goal is to use one or more of the supplied tools to collect any necessary information for producing `titles`, `notes`.\n\nTo do this, you will interleave next_thought, next_tool_name, and next_tool_args in each turn, and also when finishing the task.\nAfter each tool call, you receive a resulting observation, which gets appended to your trajectory.\n\nWhen writing next_thought, you may reason about the current situation and plan for future steps.\nWhen selecting the next_tool_name and its next_tool_args, the tool must be one of:\n\n(1) semantic_metadata_search, whose description is <desc>Performs a fast semantic search on only the titles and descriptions of documents. Use this as a FIRST STEP to quickly identify a list of potentially relevant policies based on a general topic or concept. Returns a list of document titles and descriptions.</desc>. It takes arguments {'query': {'type': 'string'}}.\n(2) semantic_content_search, whose description is <desc>Performs a broad semantic search on the FULL TEXT content of all documents. Use this to find specific facts, procedures, or nuanced details deep inside documents, especially for vague questions where the exact keywords are unknown. Returns relevant text chunks and their source titles.</desc>. It takes arguments {'query': {'type': 'string'}}.\n(3) keyword_search, whose description is <desc>Searches the full text of all documents for exact keyword matches. Best for finding specific, non-negotiable terms like official form names, acronyms, or technical terms that semantic search might misinterpret. Use multiple comma-separated keywords to broaden the search and find documents that may not use the exact original term (e.g., 'AI, artificial, intelligence, generative').</desc>. It takes arguments {'query': {'type': 'string'}}.\n(4) get_full_document_text, whose description is <desc>Retrieves the COMPLETE, unabridged text of a single document given its exact title. Use this only AFTER you have identified a highly relevant document title from one of your search tools to gain a comprehensive understanding.</desc>. It takes arguments {'title': {'type': 'string'}}.\n(5) finish, whose description is <desc>Marks the task as complete. That is, signals that all information for producing the outputs, i.e. `titles`, `notes`, are now available to be extracted.</desc>. It takes arguments {}.\nWhen providing `next_tool_args`, the value inside the field must be in JSON format",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "The user's original question."
+        },
+        {
+          "prefix": "Trajectory:",
+          "description": "${trajectory}"
+        },
+        {
+          "prefix": "Next Thought:",
+          "description": "${next_thought}"
+        },
+        {
+          "prefix": "Next Tool Name:",
+          "description": "${next_tool_name}"
+        },
+        {
+          "prefix": "Next Tool Args:",
+          "description": "${next_tool_args}"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "extract.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Conduct research to find all policy document titles relevant to answering the user's question. Use your tools strategically. Start with precise keyword searches for specific terms, then broaden your search with semantic queries if needed. Make sure you are meticulous in your research. If one approach doesn't yeild useful results, try something else. Your final output is a list of the most relevant document titles that will help answer the user's question.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "The user's original question."
+        },
+        {
+          "prefix": "Trajectory:",
+          "description": "${trajectory}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Titles:",
+          "description": "A list of source document titles relevent to answering the question."
+        },
+        {
+          "prefix": "Notes:",
+          "description": "Record any important findings or nuances about your observations that are not captured in the final list of documents."
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "3.0.3",
+      "cloudpickle": "3.1"
+    }
+  }
+}

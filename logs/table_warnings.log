@@ -1,0 +1,9 @@
+2025-10-18 12:23:39,257 - WARNING - Doc: https://policies.uq.edu.au/document/view-current.php?id=439 - TableIdx: 1 - Linearizer returned empty result. Input snippet: Terms | Definitions  
+---|---  
+Anti-HAV | Serum antibody to hepatitis A virus.  
+ABL | Australian bat lyssavirus.  
+Bacteria | Micro-organisms that can cause infection.  
+BCG | Bacillus Calmette-Guer...
+
+Processing Document 390/419: 'Vaccinations and Immunisation Guideline'...
+2025/10/18 12:23:39 WARNING dspy.clients.lm: LM response was truncated due to exceeding max_tokens=16000. You can inspect the latest LM interactions with `dspy.inspect_history()`. To avoid truncation, consider passing a larger max_tokens when setting up dspy.LM. You may also consider increasing the temperature (currently 0.0)  if the reason for truncation is repetition.
