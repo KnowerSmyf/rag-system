@@ -97,7 +97,8 @@ The project includes:
 
 ## Notes
 
-Large datasets and vector stores are not fully included in the repository due to size constraints.
+- Large datasets and vector stores are not fully included in the repository due to size constraints.
+- This repository contains the project code, notebooks, and selected outputs, but does not include all data artefacts and vector stores required for full reproduction due to size constraints. 
 
 ## Lessons / Future Work
 
@@ -108,3 +109,4 @@ This project highlighted the importance of:
 - carefully evaluating retrieval metrics
 
 - testing design assumptions empirically rather than relying on intuition alone
+
